@@ -1,0 +1,5 @@
+acme_shop:
+    resource: "@AcmeShopBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

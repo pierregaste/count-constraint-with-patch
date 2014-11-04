@@ -1,0 +1,11 @@
+{% extends "TwigBundle::layout.html.twig" %}
+
+{% block body %}
+    <div class="block">
+        <form name="my_form" action="{{ path('acme_shop_default_index') }}" method="POST">
+            {{ form_widget(form) }}
+            <input type="hidden" name="_method" value="PATCH">
+            <input type="submit" value="Send !">
+        </form>
+    </div>
+{% endblock %}
